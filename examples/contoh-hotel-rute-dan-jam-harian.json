@@ -1,0 +1,1409 @@
+{
+  "format": "jalanyuk-2.2-demo",
+  "plan": {
+    "config": {
+      "city": "Yogyakarta",
+      "city_lat": -7.7956,
+      "city_lon": 110.3695,
+      "origin": "Jakarta",
+      "start_date": "2027-01-01",
+      "days": 3,
+      "arrival_time": "10:00",
+      "depart_date": "2026-12-31",
+      "depart_time": "21:00",
+      "destination_arrival_date": "2027-01-01",
+      "destination_arrival_time": "07:30",
+      "return_date": "2027-01-03",
+      "return_time": "18:00",
+      "home_arrival_date": "2027-01-04",
+      "home_arrival_time": "00:30",
+      "return_buffer_minutes": 90,
+      "local_travel_mode": "mobil",
+      "local_cost_mode": "per_km",
+      "traffic_percent": 125,
+      "visit_gap_minutes": 15,
+      "base_name": "PENGINAPAN DEMO (bukan hotel nyata)",
+      "hotel_area": "Koordinat ilustratif Yogyakarta",
+      "base_lat": -7.816,
+      "base_lon": 110.369,
+      "use_city_center_as_base": false,
+      "include_evening": true,
+      "daily_hotel_return_time": "21:00",
+      "hotel_return_times": {
+        "2027-01-02": "20:00"
+      },
+      "night_start_time": "18:00",
+      "last_day_via_hotel": false,
+      "return_to_base": true,
+      "return_hub_name": "TITIK PULANG DEMO (bukan stasiun terverifikasi)",
+      "return_hub_lat": -7.79,
+      "return_hub_lon": 110.36,
+      "local_cost_per_km": 2500,
+      "local_base_per_leg": 6000,
+      "local_vehicle_capacity": 5,
+      "route_cache": {},
+      "leg_overrides": {},
+      "daily_start_time": "09:00",
+      "budget": 3700000,
+      "adults": 2,
+      "children": 1,
+      "children_2_plus": 1,
+      "children_age_2": 1,
+      "infants_under_2": 1,
+      "seniors": 0,
+      "pace": "normal",
+      "interests": [],
+      "include_hotel": true,
+      "hotel_rate": 350000,
+      "room_capacity": 3,
+      "infant_uses_bed": false,
+      "outbound_mode": "kereta",
+      "return_mode": "kereta",
+      "outbound_fare": 195000,
+      "return_fare": 220000,
+      "intercity_per_person": 415000,
+      "car_capacity": 5,
+      "train_infant_without_seat": true,
+      "train_age2_without_seat": true,
+      "flight_infant_percent": 10,
+      "other_infant_percent": 0,
+      "child_activity_percent": 70,
+      "infant_activity_percent": 0,
+      "age2_activity_percent": 70,
+      "child_food_percent": 70,
+      "infant_food_percent": 0,
+      "age2_food_percent": 70,
+      "local_child_percent": 100,
+      "local_infant_percent": 0,
+      "local_age2_percent": 100,
+      "local_per_person_day": 50000,
+      "parking_per_day": 15000,
+      "miscellaneous": 100000,
+      "emergency_fund": 150000
+    },
+    "itinerary": [
+      {
+        "day": 1,
+        "date": "2027-01-01",
+        "slots": [
+          {
+            "id": "d1-s1",
+            "kind": "wisata",
+            "period": "pagi",
+            "item": {
+              "id": "wisata-h",
+              "theme": "Alam",
+              "area": "Koordinat contoh area Yogyakarta (BUKAN lokasi tervalidasi)",
+              "description": "",
+              "source": "Data DEMO, bukan tempat yang dapat dipesan",
+              "opening_hours": "",
+              "wheelchair": "",
+              "osm_url": "",
+              "price_status": "ilustrasi",
+              "name": "Taman Bukit (CONTOH)",
+              "kind": "wisata",
+              "price": 15000,
+              "duration": 70,
+              "lat": -7.809,
+              "lon": 110.395,
+              "outdoor": true
+            },
+            "start": "10:17",
+            "end": "11:27",
+            "travel_minutes": 17,
+            "travel_km": 4.01,
+            "leg": {
+              "id": "__base__|wisata-h",
+              "from": "PENGINAPAN DEMO (bukan hotel nyata)",
+              "to": "Taman Bukit (CONTOH)",
+              "minutes": 17,
+              "km": 4.01,
+              "source": "approx_distance",
+              "mode": "mobil",
+              "start_coords": {
+                "lat": -7.816,
+                "lon": 110.369
+              },
+              "end_coords": {
+                "lat": -7.809,
+                "lon": 110.395
+              },
+              "estimated_cost": 16025,
+              "depart": "10:00",
+              "arrive": "10:17"
+            },
+            "cost": 40500,
+            "status": "scheduled",
+            "opening_warning": "",
+            "weather_warning": "",
+            "schedule_warning": ""
+          },
+          {
+            "id": "d1-s2",
+            "kind": "kuliner",
+            "period": "siang",
+            "item": {
+              "id": "kuliner-b",
+              "theme": "Kuliner",
+              "area": "Koordinat contoh area Yogyakarta (BUKAN lokasi tervalidasi)",
+              "description": "",
+              "source": "Data DEMO, bukan tempat yang dapat dipesan",
+              "opening_hours": "",
+              "wheelchair": "",
+              "osm_url": "",
+              "price_status": "ilustrasi",
+              "name": "Angkringan Malam (CONTOH)",
+              "kind": "kuliner",
+              "price": 25000,
+              "duration": 55,
+              "lat": -7.802,
+              "lon": 110.367,
+              "outdoor": false
+            },
+            "start": "11:59",
+            "end": "12:54",
+            "travel_minutes": 17,
+            "travel_km": 4.29,
+            "leg": {
+              "id": "wisata-h|kuliner-b",
+              "from": "Taman Bukit (CONTOH)",
+              "to": "Angkringan Malam (CONTOH)",
+              "minutes": 17,
+              "km": 4.29,
+              "source": "approx_distance",
+              "mode": "mobil",
+              "start_coords": {
+                "lat": -7.809,
+                "lon": 110.395
+              },
+              "end_coords": {
+                "lat": -7.802,
+                "lon": 110.367
+              },
+              "estimated_cost": 16725,
+              "depart": "11:42",
+              "arrive": "11:59"
+            },
+            "cost": 67500,
+            "status": "scheduled",
+            "opening_warning": "",
+            "weather_warning": "",
+            "schedule_warning": ""
+          },
+          {
+            "id": "d1-s3",
+            "kind": "wisata",
+            "period": "sore",
+            "item": {
+              "id": "wisata-f",
+              "theme": "Wisata",
+              "area": "Koordinat contoh area Yogyakarta (BUKAN lokasi tervalidasi)",
+              "description": "",
+              "source": "Data DEMO, bukan tempat yang dapat dipesan",
+              "opening_hours": "",
+              "wheelchair": "",
+              "osm_url": "",
+              "price_status": "ilustrasi",
+              "name": "Kawasan Alun-Alun (CONTOH)",
+              "kind": "wisata",
+              "price": 0,
+              "duration": 70,
+              "lat": -7.817,
+              "lon": 110.363,
+              "outdoor": true
+            },
+            "start": "15:00",
+            "end": "16:10",
+            "travel_minutes": 12,
+            "travel_km": 2.33,
+            "leg": {
+              "id": "kuliner-b|wisata-f",
+              "from": "Angkringan Malam (CONTOH)",
+              "to": "Kawasan Alun-Alun (CONTOH)",
+              "minutes": 12,
+              "km": 2.33,
+              "source": "approx_distance",
+              "mode": "mobil",
+              "start_coords": {
+                "lat": -7.802,
+                "lon": 110.367
+              },
+              "end_coords": {
+                "lat": -7.817,
+                "lon": 110.363
+              },
+              "estimated_cost": 11825,
+              "depart": "13:09",
+              "arrive": "15:00"
+            },
+            "cost": 0,
+            "status": "scheduled",
+            "opening_warning": "",
+            "weather_warning": "",
+            "schedule_warning": ""
+          },
+          {
+            "id": "d1-s4",
+            "kind": "kuliner",
+            "period": "malam",
+            "item": {
+              "id": "kuliner-f",
+              "theme": "Kuliner",
+              "area": "Koordinat contoh area Yogyakarta (BUKAN lokasi tervalidasi)",
+              "description": "",
+              "source": "Data DEMO, bukan tempat yang dapat dipesan",
+              "opening_hours": "",
+              "wheelchair": "",
+              "osm_url": "",
+              "price_status": "ilustrasi",
+              "name": "Pasar Makan Malam (CONTOH)",
+              "kind": "kuliner",
+              "price": 30000,
+              "duration": 55,
+              "lat": -7.81,
+              "lon": 110.38,
+              "outdoor": false
+            },
+            "start": "18:00",
+            "end": "18:55",
+            "travel_minutes": 13,
+            "travel_km": 2.74,
+            "leg": {
+              "id": "wisata-f|kuliner-f",
+              "from": "Kawasan Alun-Alun (CONTOH)",
+              "to": "Pasar Makan Malam (CONTOH)",
+              "minutes": 13,
+              "km": 2.74,
+              "source": "approx_distance",
+              "mode": "mobil",
+              "start_coords": {
+                "lat": -7.817,
+                "lon": 110.363
+              },
+              "end_coords": {
+                "lat": -7.81,
+                "lon": 110.38
+              },
+              "estimated_cost": 12851,
+              "depart": "16:25",
+              "arrive": "18:00"
+            },
+            "cost": 81000,
+            "status": "scheduled",
+            "opening_warning": "",
+            "weather_warning": "",
+            "schedule_warning": ""
+          }
+        ],
+        "cost": 189000,
+        "window_start": "10:00",
+        "window_end": "21:00",
+        "is_return_day": false,
+        "travel_km_estimate": 15.24,
+        "travel_minutes_total": 70,
+        "travel_legs": [
+          {
+            "id": "__base__|wisata-h",
+            "from": "PENGINAPAN DEMO (bukan hotel nyata)",
+            "to": "Taman Bukit (CONTOH)",
+            "minutes": 17,
+            "km": 4.01,
+            "source": "approx_distance",
+            "mode": "mobil",
+            "start_coords": {
+              "lat": -7.816,
+              "lon": 110.369
+            },
+            "end_coords": {
+              "lat": -7.809,
+              "lon": 110.395
+            },
+            "estimated_cost": 16025,
+            "depart": "10:00",
+            "arrive": "10:17"
+          },
+          {
+            "id": "wisata-h|kuliner-b",
+            "from": "Taman Bukit (CONTOH)",
+            "to": "Angkringan Malam (CONTOH)",
+            "minutes": 17,
+            "km": 4.29,
+            "source": "approx_distance",
+            "mode": "mobil",
+            "start_coords": {
+              "lat": -7.809,
+              "lon": 110.395
+            },
+            "end_coords": {
+              "lat": -7.802,
+              "lon": 110.367
+            },
+            "estimated_cost": 16725,
+            "depart": "11:42",
+            "arrive": "11:59"
+          },
+          {
+            "id": "kuliner-b|wisata-f",
+            "from": "Angkringan Malam (CONTOH)",
+            "to": "Kawasan Alun-Alun (CONTOH)",
+            "minutes": 12,
+            "km": 2.33,
+            "source": "approx_distance",
+            "mode": "mobil",
+            "start_coords": {
+              "lat": -7.802,
+              "lon": 110.367
+            },
+            "end_coords": {
+              "lat": -7.817,
+              "lon": 110.363
+            },
+            "estimated_cost": 11825,
+            "depart": "13:09",
+            "arrive": "15:00"
+          },
+          {
+            "id": "wisata-f|kuliner-f",
+            "from": "Kawasan Alun-Alun (CONTOH)",
+            "to": "Pasar Makan Malam (CONTOH)",
+            "minutes": 13,
+            "km": 2.74,
+            "source": "approx_distance",
+            "mode": "mobil",
+            "start_coords": {
+              "lat": -7.817,
+              "lon": 110.363
+            },
+            "end_coords": {
+              "lat": -7.81,
+              "lon": 110.38
+            },
+            "estimated_cost": 12851,
+            "depart": "16:25",
+            "arrive": "18:00"
+          },
+          {
+            "id": "kuliner-f|__base__",
+            "from": "Pasar Makan Malam (CONTOH)",
+            "to": "PENGINAPAN DEMO (bukan hotel nyata)",
+            "minutes": 11,
+            "km": 1.87,
+            "source": "approx_distance",
+            "mode": "mobil",
+            "start_coords": {
+              "lat": -7.81,
+              "lon": 110.38
+            },
+            "end_coords": {
+              "lat": -7.816,
+              "lon": 110.369
+            },
+            "estimated_cost": 10675,
+            "depart": "18:55",
+            "arrive": "19:06",
+            "kind": "hotel"
+          }
+        ],
+        "return_leg": {
+          "id": "kuliner-f|__base__",
+          "from": "Pasar Makan Malam (CONTOH)",
+          "to": "PENGINAPAN DEMO (bukan hotel nyata)",
+          "minutes": 11,
+          "km": 1.87,
+          "source": "approx_distance",
+          "mode": "mobil",
+          "start_coords": {
+            "lat": -7.81,
+            "lon": 110.38
+          },
+          "end_coords": {
+            "lat": -7.816,
+            "lon": 110.369
+          },
+          "estimated_cost": 10675,
+          "depart": "18:55",
+          "arrive": "19:06",
+          "kind": "hotel"
+        },
+        "hotel_return_target": "21:00",
+        "hotel_arrival": "19:06",
+        "variable_transport_cost": 68101,
+        "weather": {},
+        "warnings": []
+      },
+      {
+        "day": 2,
+        "date": "2027-01-02",
+        "slots": [
+          {
+            "id": "d2-s1",
+            "kind": "wisata",
+            "period": "pagi",
+            "item": {
+              "id": "wisata-c",
+              "theme": "Taman",
+              "area": "Koordinat contoh area Yogyakarta (BUKAN lokasi tervalidasi)",
+              "description": "",
+              "source": "Data DEMO, bukan tempat yang dapat dipesan",
+              "opening_hours": "",
+              "wheelchair": "",
+              "osm_url": "",
+              "price_status": "ilustrasi",
+              "name": "Taman Kota (CONTOH)",
+              "kind": "wisata",
+              "price": 0,
+              "duration": 70,
+              "lat": -7.797,
+              "lon": 110.385,
+              "outdoor": true
+            },
+            "start": "09:16",
+            "end": "10:26",
+            "travel_minutes": 16,
+            "travel_km": 3.71,
+            "leg": {
+              "id": "__base__|wisata-c",
+              "from": "PENGINAPAN DEMO (bukan hotel nyata)",
+              "to": "Taman Kota (CONTOH)",
+              "minutes": 16,
+              "km": 3.71,
+              "source": "approx_distance",
+              "mode": "mobil",
+              "start_coords": {
+                "lat": -7.816,
+                "lon": 110.369
+              },
+              "end_coords": {
+                "lat": -7.797,
+                "lon": 110.385
+              },
+              "estimated_cost": 15275,
+              "depart": "09:00",
+              "arrive": "09:16"
+            },
+            "cost": 0,
+            "status": "scheduled",
+            "opening_warning": "",
+            "weather_warning": "",
+            "schedule_warning": ""
+          },
+          {
+            "id": "d2-s2",
+            "kind": "kuliner",
+            "period": "siang",
+            "item": {
+              "id": "kuliner-a",
+              "theme": "Kuliner",
+              "area": "Koordinat contoh area Yogyakarta (BUKAN lokasi tervalidasi)",
+              "description": "",
+              "source": "Data DEMO, bukan tempat yang dapat dipesan",
+              "opening_hours": "",
+              "wheelchair": "",
+              "osm_url": "",
+              "price_status": "ilustrasi",
+              "name": "Restoran Siang (CONTOH)",
+              "kind": "kuliner",
+              "price": 40000,
+              "duration": 55,
+              "lat": -7.806,
+              "lon": 110.38,
+              "outdoor": false
+            },
+            "start": "11:00",
+            "end": "11:55",
+            "travel_minutes": 10,
+            "travel_km": 1.54,
+            "leg": {
+              "id": "wisata-c|kuliner-a",
+              "from": "Taman Kota (CONTOH)",
+              "to": "Restoran Siang (CONTOH)",
+              "minutes": 10,
+              "km": 1.54,
+              "source": "approx_distance",
+              "mode": "mobil",
+              "start_coords": {
+                "lat": -7.797,
+                "lon": 110.385
+              },
+              "end_coords": {
+                "lat": -7.806,
+                "lon": 110.38
+              },
+              "estimated_cost": 9850,
+              "depart": "10:41",
+              "arrive": "11:00"
+            },
+            "cost": 108000,
+            "status": "scheduled",
+            "opening_warning": "",
+            "weather_warning": "",
+            "schedule_warning": ""
+          },
+          {
+            "id": "d2-s3",
+            "kind": "wisata",
+            "period": "sore",
+            "item": {
+              "id": "wisata-d",
+              "theme": "Panorama",
+              "area": "Koordinat contoh area Yogyakarta (BUKAN lokasi tervalidasi)",
+              "description": "",
+              "source": "Data DEMO, bukan tempat yang dapat dipesan",
+              "opening_hours": "",
+              "wheelchair": "",
+              "osm_url": "",
+              "price_status": "ilustrasi",
+              "name": "Spot Sunset (CONTOH)",
+              "kind": "wisata",
+              "price": 10000,
+              "duration": 80,
+              "lat": -7.814,
+              "lon": 110.382,
+              "outdoor": true
+            },
+            "start": "15:00",
+            "end": "16:20",
+            "travel_minutes": 9,
+            "travel_km": 1.24,
+            "leg": {
+              "id": "kuliner-a|wisata-d",
+              "from": "Restoran Siang (CONTOH)",
+              "to": "Spot Sunset (CONTOH)",
+              "minutes": 9,
+              "km": 1.24,
+              "source": "approx_distance",
+              "mode": "mobil",
+              "start_coords": {
+                "lat": -7.806,
+                "lon": 110.38
+              },
+              "end_coords": {
+                "lat": -7.814,
+                "lon": 110.382
+              },
+              "estimated_cost": 9100,
+              "depart": "12:10",
+              "arrive": "15:00"
+            },
+            "cost": 27000,
+            "status": "scheduled",
+            "opening_warning": "",
+            "weather_warning": "",
+            "schedule_warning": ""
+          },
+          {
+            "id": "d2-s4",
+            "kind": "kuliner",
+            "period": "malam",
+            "item": {
+              "id": "kuliner-c",
+              "theme": "Kuliner",
+              "area": "Koordinat contoh area Yogyakarta (BUKAN lokasi tervalidasi)",
+              "description": "",
+              "source": "Data DEMO, bukan tempat yang dapat dipesan",
+              "opening_hours": "",
+              "wheelchair": "",
+              "osm_url": "",
+              "price_status": "ilustrasi",
+              "name": "Kafe Senja (CONTOH)",
+              "kind": "kuliner",
+              "price": 35000,
+              "duration": 55,
+              "lat": -7.812,
+              "lon": 110.365,
+              "outdoor": false
+            },
+            "start": "18:00",
+            "end": "18:55",
+            "travel_minutes": 13,
+            "travel_km": 2.55,
+            "leg": {
+              "id": "wisata-d|kuliner-c",
+              "from": "Spot Sunset (CONTOH)",
+              "to": "Kafe Senja (CONTOH)",
+              "minutes": 13,
+              "km": 2.55,
+              "source": "approx_distance",
+              "mode": "mobil",
+              "start_coords": {
+                "lat": -7.814,
+                "lon": 110.382
+              },
+              "end_coords": {
+                "lat": -7.812,
+                "lon": 110.365
+              },
+              "estimated_cost": 12375,
+              "depart": "16:35",
+              "arrive": "18:00"
+            },
+            "cost": 94500,
+            "status": "scheduled",
+            "opening_warning": "",
+            "weather_warning": "",
+            "schedule_warning": ""
+          }
+        ],
+        "cost": 229500,
+        "window_start": "09:00",
+        "window_end": "20:00",
+        "is_return_day": false,
+        "travel_km_estimate": 9.89,
+        "travel_minutes_total": 56,
+        "travel_legs": [
+          {
+            "id": "__base__|wisata-c",
+            "from": "PENGINAPAN DEMO (bukan hotel nyata)",
+            "to": "Taman Kota (CONTOH)",
+            "minutes": 16,
+            "km": 3.71,
+            "source": "approx_distance",
+            "mode": "mobil",
+            "start_coords": {
+              "lat": -7.816,
+              "lon": 110.369
+            },
+            "end_coords": {
+              "lat": -7.797,
+              "lon": 110.385
+            },
+            "estimated_cost": 15275,
+            "depart": "09:00",
+            "arrive": "09:16"
+          },
+          {
+            "id": "wisata-c|kuliner-a",
+            "from": "Taman Kota (CONTOH)",
+            "to": "Restoran Siang (CONTOH)",
+            "minutes": 10,
+            "km": 1.54,
+            "source": "approx_distance",
+            "mode": "mobil",
+            "start_coords": {
+              "lat": -7.797,
+              "lon": 110.385
+            },
+            "end_coords": {
+              "lat": -7.806,
+              "lon": 110.38
+            },
+            "estimated_cost": 9850,
+            "depart": "10:41",
+            "arrive": "11:00"
+          },
+          {
+            "id": "kuliner-a|wisata-d",
+            "from": "Restoran Siang (CONTOH)",
+            "to": "Spot Sunset (CONTOH)",
+            "minutes": 9,
+            "km": 1.24,
+            "source": "approx_distance",
+            "mode": "mobil",
+            "start_coords": {
+              "lat": -7.806,
+              "lon": 110.38
+            },
+            "end_coords": {
+              "lat": -7.814,
+              "lon": 110.382
+            },
+            "estimated_cost": 9100,
+            "depart": "12:10",
+            "arrive": "15:00"
+          },
+          {
+            "id": "wisata-d|kuliner-c",
+            "from": "Spot Sunset (CONTOH)",
+            "to": "Kafe Senja (CONTOH)",
+            "minutes": 13,
+            "km": 2.55,
+            "source": "approx_distance",
+            "mode": "mobil",
+            "start_coords": {
+              "lat": -7.814,
+              "lon": 110.382
+            },
+            "end_coords": {
+              "lat": -7.812,
+              "lon": 110.365
+            },
+            "estimated_cost": 12375,
+            "depart": "16:35",
+            "arrive": "18:00"
+          },
+          {
+            "id": "kuliner-c|__base__",
+            "from": "Kafe Senja (CONTOH)",
+            "to": "PENGINAPAN DEMO (bukan hotel nyata)",
+            "minutes": 8,
+            "km": 0.85,
+            "source": "approx_distance",
+            "mode": "mobil",
+            "start_coords": {
+              "lat": -7.812,
+              "lon": 110.365
+            },
+            "end_coords": {
+              "lat": -7.816,
+              "lon": 110.369
+            },
+            "estimated_cost": 8125,
+            "depart": "18:55",
+            "arrive": "19:03",
+            "kind": "hotel"
+          }
+        ],
+        "return_leg": {
+          "id": "kuliner-c|__base__",
+          "from": "Kafe Senja (CONTOH)",
+          "to": "PENGINAPAN DEMO (bukan hotel nyata)",
+          "minutes": 8,
+          "km": 0.85,
+          "source": "approx_distance",
+          "mode": "mobil",
+          "start_coords": {
+            "lat": -7.812,
+            "lon": 110.365
+          },
+          "end_coords": {
+            "lat": -7.816,
+            "lon": 110.369
+          },
+          "estimated_cost": 8125,
+          "depart": "18:55",
+          "arrive": "19:03",
+          "kind": "hotel"
+        },
+        "hotel_return_target": "20:00",
+        "hotel_arrival": "19:03",
+        "variable_transport_cost": 54725,
+        "weather": {},
+        "warnings": []
+      },
+      {
+        "day": 3,
+        "date": "2027-01-03",
+        "slots": [
+          {
+            "id": "d3-s1",
+            "kind": "wisata",
+            "period": "pagi",
+            "item": {
+              "id": "wisata-a",
+              "theme": "Alam",
+              "area": "Koordinat contoh area Yogyakarta (BUKAN lokasi tervalidasi)",
+              "description": "",
+              "source": "Data DEMO, bukan tempat yang dapat dipesan",
+              "opening_hours": "",
+              "wheelchair": "",
+              "osm_url": "",
+              "price_status": "ilustrasi",
+              "name": "Bukit Panorama (CONTOH)",
+              "kind": "wisata",
+              "price": 12000,
+              "duration": 75,
+              "lat": -7.795,
+              "lon": 110.375,
+              "outdoor": true
+            },
+            "start": "09:15",
+            "end": "10:30",
+            "travel_minutes": 15,
+            "travel_km": 3.28,
+            "leg": {
+              "id": "__base__|wisata-a",
+              "from": "PENGINAPAN DEMO (bukan hotel nyata)",
+              "to": "Bukit Panorama (CONTOH)",
+              "minutes": 15,
+              "km": 3.28,
+              "source": "approx_distance",
+              "mode": "mobil",
+              "start_coords": {
+                "lat": -7.816,
+                "lon": 110.369
+              },
+              "end_coords": {
+                "lat": -7.795,
+                "lon": 110.375
+              },
+              "estimated_cost": 14200,
+              "depart": "09:00",
+              "arrive": "09:15"
+            },
+            "cost": 32400,
+            "status": "scheduled",
+            "opening_warning": "",
+            "weather_warning": "",
+            "schedule_warning": ""
+          },
+          {
+            "id": "d3-s2",
+            "kind": "kuliner",
+            "period": "siang",
+            "item": {
+              "id": "kuliner-g",
+              "theme": "Kuliner",
+              "area": "Koordinat contoh area Yogyakarta (BUKAN lokasi tervalidasi)",
+              "description": "",
+              "source": "Data DEMO, bukan tempat yang dapat dipesan",
+              "opening_hours": "",
+              "wheelchair": "",
+              "osm_url": "",
+              "price_status": "ilustrasi",
+              "name": "Rumah Makan Keluarga (CONTOH)",
+              "kind": "kuliner",
+              "price": 42000,
+              "duration": 55,
+              "lat": -7.82,
+              "lon": 110.385,
+              "outdoor": false
+            },
+            "start": "11:02",
+            "end": "11:57",
+            "travel_minutes": 17,
+            "travel_km": 4.04,
+            "leg": {
+              "id": "wisata-a|kuliner-g",
+              "from": "Bukit Panorama (CONTOH)",
+              "to": "Rumah Makan Keluarga (CONTOH)",
+              "minutes": 17,
+              "km": 4.04,
+              "source": "approx_distance",
+              "mode": "mobil",
+              "start_coords": {
+                "lat": -7.795,
+                "lon": 110.375
+              },
+              "end_coords": {
+                "lat": -7.82,
+                "lon": 110.385
+              },
+              "estimated_cost": 16100,
+              "depart": "10:45",
+              "arrive": "11:02"
+            },
+            "cost": 113400,
+            "status": "scheduled",
+            "opening_warning": "",
+            "weather_warning": "",
+            "schedule_warning": ""
+          },
+          {
+            "id": "d3-s3",
+            "kind": "wisata",
+            "period": "sore",
+            "item": {
+              "id": "wisata-b",
+              "theme": "Museum",
+              "area": "Koordinat contoh area Yogyakarta (BUKAN lokasi tervalidasi)",
+              "description": "",
+              "source": "Data DEMO, bukan tempat yang dapat dipesan",
+              "opening_hours": "",
+              "wheelchair": "",
+              "osm_url": "",
+              "price_status": "ilustrasi",
+              "name": "Museum Kota (CONTOH)",
+              "kind": "wisata",
+              "price": 30000,
+              "duration": 75,
+              "lat": -7.803,
+              "lon": 110.369,
+              "outdoor": false
+            },
+            "start": "15:00",
+            "end": "16:15",
+            "travel_minutes": 15,
+            "travel_km": 3.49,
+            "leg": {
+              "id": "kuliner-g|wisata-b",
+              "from": "Rumah Makan Keluarga (CONTOH)",
+              "to": "Museum Kota (CONTOH)",
+              "minutes": 15,
+              "km": 3.49,
+              "source": "approx_distance",
+              "mode": "mobil",
+              "start_coords": {
+                "lat": -7.82,
+                "lon": 110.385
+              },
+              "end_coords": {
+                "lat": -7.803,
+                "lon": 110.369
+              },
+              "estimated_cost": 14725,
+              "depart": "12:12",
+              "arrive": "15:00"
+            },
+            "cost": 81000,
+            "status": "scheduled",
+            "opening_warning": "",
+            "weather_warning": "",
+            "schedule_warning": ""
+          },
+          {
+            "id": "d3-s4",
+            "kind": "kuliner",
+            "period": "malam",
+            "item": {
+              "id": "kuliner-d",
+              "theme": "Kuliner",
+              "area": "Koordinat contoh area Yogyakarta (BUKAN lokasi tervalidasi)",
+              "description": "",
+              "source": "Data DEMO, bukan tempat yang dapat dipesan",
+              "opening_hours": "",
+              "wheelchair": "",
+              "osm_url": "",
+              "price_status": "ilustrasi",
+              "name": "Warung Gudeg (CONTOH)",
+              "kind": "kuliner",
+              "price": 25000,
+              "duration": 55,
+              "lat": -7.8,
+              "lon": 110.372,
+              "outdoor": false
+            },
+            "start": null,
+            "end": null,
+            "travel_minutes": null,
+            "travel_km": null,
+            "leg": null,
+            "cost": 0,
+            "status": "tidak_terjadwal",
+            "opening_warning": "",
+            "weather_warning": "",
+            "schedule_warning": "Kegiatan tidak muat dalam periode pagi/siang/sore/malam atau melampaui waktu kembali hotel/keberangkatan pulang. Ganti tempat, durasi atau jadwal."
+          }
+        ],
+        "cost": 226800,
+        "window_start": "09:00",
+        "window_end": "16:30",
+        "is_return_day": true,
+        "travel_km_estimate": 13.18,
+        "travel_minutes_total": 59,
+        "travel_legs": [
+          {
+            "id": "__base__|wisata-a",
+            "from": "PENGINAPAN DEMO (bukan hotel nyata)",
+            "to": "Bukit Panorama (CONTOH)",
+            "minutes": 15,
+            "km": 3.28,
+            "source": "approx_distance",
+            "mode": "mobil",
+            "start_coords": {
+              "lat": -7.816,
+              "lon": 110.369
+            },
+            "end_coords": {
+              "lat": -7.795,
+              "lon": 110.375
+            },
+            "estimated_cost": 14200,
+            "depart": "09:00",
+            "arrive": "09:15"
+          },
+          {
+            "id": "wisata-a|kuliner-g",
+            "from": "Bukit Panorama (CONTOH)",
+            "to": "Rumah Makan Keluarga (CONTOH)",
+            "minutes": 17,
+            "km": 4.04,
+            "source": "approx_distance",
+            "mode": "mobil",
+            "start_coords": {
+              "lat": -7.795,
+              "lon": 110.375
+            },
+            "end_coords": {
+              "lat": -7.82,
+              "lon": 110.385
+            },
+            "estimated_cost": 16100,
+            "depart": "10:45",
+            "arrive": "11:02"
+          },
+          {
+            "id": "kuliner-g|wisata-b",
+            "from": "Rumah Makan Keluarga (CONTOH)",
+            "to": "Museum Kota (CONTOH)",
+            "minutes": 15,
+            "km": 3.49,
+            "source": "approx_distance",
+            "mode": "mobil",
+            "start_coords": {
+              "lat": -7.82,
+              "lon": 110.385
+            },
+            "end_coords": {
+              "lat": -7.803,
+              "lon": 110.369
+            },
+            "estimated_cost": 14725,
+            "depart": "12:12",
+            "arrive": "15:00"
+          },
+          {
+            "id": "wisata-b|__return_hub__",
+            "from": "Museum Kota (CONTOH)",
+            "to": "TITIK PULANG DEMO (bukan stasiun terverifikasi)",
+            "minutes": 12,
+            "km": 2.37,
+            "source": "approx_distance",
+            "mode": "mobil",
+            "start_coords": {
+              "lat": -7.803,
+              "lon": 110.369
+            },
+            "end_coords": {
+              "lat": -7.79,
+              "lon": 110.36
+            },
+            "estimated_cost": 11925,
+            "depart": "16:15",
+            "arrive": "16:27",
+            "kind": "pulang"
+          }
+        ],
+        "return_leg": {
+          "id": "wisata-b|__return_hub__",
+          "from": "Museum Kota (CONTOH)",
+          "to": "TITIK PULANG DEMO (bukan stasiun terverifikasi)",
+          "minutes": 12,
+          "km": 2.37,
+          "source": "approx_distance",
+          "mode": "mobil",
+          "start_coords": {
+            "lat": -7.803,
+            "lon": 110.369
+          },
+          "end_coords": {
+            "lat": -7.79,
+            "lon": 110.36
+          },
+          "estimated_cost": 11925,
+          "depart": "16:15",
+          "arrive": "16:27",
+          "kind": "pulang"
+        },
+        "hotel_return_target": "21:00",
+        "hotel_arrival": null,
+        "variable_transport_cost": 56950,
+        "weather": {},
+        "warnings": [
+          "Pulang 18:00; batas tiba di titik keberangkatan 16:30 (buffer 90 menit)."
+        ]
+      }
+    ],
+    "summary": {
+      "breakdown": {
+        "wisata": 180900,
+        "kuliner": 464400,
+        "hotel": 700000,
+        "transport_antar_kota": 830000,
+        "transport_lokal": 179776,
+        "parkir": 45000,
+        "lain_lain": 100000,
+        "dana_cadangan": 150000
+      },
+      "total": 2650076,
+      "budget": 3700000,
+      "remaining": 1049924,
+      "persons": 4,
+      "rooms": 1,
+      "nights": 2,
+      "day_totals": [
+        189000,
+        229500,
+        226800
+      ],
+      "suggestions": [
+        "1 aktivitas tidak muat setelah waktu perpindahan dan batas kepulangan diperhitungkan; tidak dikenai biaya.",
+        "Tarif anak 2+ untuk wisata/kuliner adalah persentase asumsi yang bisa diubah.",
+        "Biaya bayi tidak otomatis nol untuk semua layanan; cek kebijakan tiap operator.",
+        "KAI: bayi/anak <3 tahun dapat gratis tanpa kursi sesuai ketentuan dan kuota pendamping; verifikasi tiket."
+      ],
+      "local_routing": {
+        "hotel": "PENGINAPAN DEMO (bukan hotel nyata)",
+        "hotel_area": "Koordinat ilustratif Yogyakarta",
+        "mode": "mobil",
+        "cost_mode": "per_km",
+        "total_km": 38.31,
+        "total_minutes": 185,
+        "unresolved_legs": 0
+      },
+      "transport_detail": {
+        "pergi": {
+          "mode": "kereta",
+          "tarif_dasar": 195000,
+          "total": 390000,
+          "gratis_bayi": 1,
+          "gratis_anak_usia_2": 1,
+          "bayi_tarif_penuh": 0,
+          "persen_bayi": 0
+        },
+        "pulang": {
+          "mode": "kereta",
+          "tarif_dasar": 220000,
+          "total": 440000,
+          "gratis_bayi": 1,
+          "gratis_anak_usia_2": 1,
+          "bayi_tarif_penuh": 0,
+          "persen_bayi": 0
+        }
+      },
+      "travel_timeline": {
+        "berangkat": "2026-12-31 21:00",
+        "tiba_tujuan": "2027-01-01 07:30",
+        "mulai_wisata": "2027-01-01 10:00",
+        "berangkat_pulang": "2027-01-03 18:00",
+        "tiba_rumah": "2027-01-04 00:30"
+      },
+      "price_notice": "Harga tiket, kuliner, hotel, transportasi dan estimasi perjalanan bukan harga atau ETA live."
+    },
+    "weather": {
+      "days": []
+    }
+  },
+  "places": [
+    {
+      "id": "wisata-a",
+      "name": "Bukit Panorama (CONTOH)",
+      "kind": "wisata",
+      "price": 12000,
+      "lat": -7.795,
+      "lon": 110.375,
+      "theme": "Alam",
+      "area": "Koordinat contoh area Yogyakarta (BUKAN lokasi tervalidasi)",
+      "outdoor": true,
+      "duration": 75,
+      "source": "Data DEMO, bukan tempat yang dapat dipesan",
+      "price_status": "ilustrasi",
+      "opening_hours": ""
+    },
+    {
+      "id": "wisata-b",
+      "name": "Museum Kota (CONTOH)",
+      "kind": "wisata",
+      "price": 30000,
+      "lat": -7.803,
+      "lon": 110.369,
+      "theme": "Museum",
+      "area": "Koordinat contoh area Yogyakarta (BUKAN lokasi tervalidasi)",
+      "outdoor": false,
+      "duration": 75,
+      "source": "Data DEMO, bukan tempat yang dapat dipesan",
+      "price_status": "ilustrasi",
+      "opening_hours": ""
+    },
+    {
+      "id": "wisata-c",
+      "name": "Taman Kota (CONTOH)",
+      "kind": "wisata",
+      "price": 0,
+      "lat": -7.797,
+      "lon": 110.385,
+      "theme": "Taman",
+      "area": "Koordinat contoh area Yogyakarta (BUKAN lokasi tervalidasi)",
+      "outdoor": true,
+      "duration": 70,
+      "source": "Data DEMO, bukan tempat yang dapat dipesan",
+      "price_status": "ilustrasi",
+      "opening_hours": ""
+    },
+    {
+      "id": "wisata-d",
+      "name": "Spot Sunset (CONTOH)",
+      "kind": "wisata",
+      "price": 10000,
+      "lat": -7.814,
+      "lon": 110.382,
+      "theme": "Panorama",
+      "area": "Koordinat contoh area Yogyakarta (BUKAN lokasi tervalidasi)",
+      "outdoor": true,
+      "duration": 80,
+      "source": "Data DEMO, bukan tempat yang dapat dipesan",
+      "price_status": "ilustrasi",
+      "opening_hours": ""
+    },
+    {
+      "id": "wisata-e",
+      "name": "Galeri Seni (CONTOH)",
+      "kind": "wisata",
+      "price": 15000,
+      "lat": -7.8,
+      "lon": 110.38,
+      "theme": "Seni",
+      "area": "Koordinat contoh area Yogyakarta (BUKAN lokasi tervalidasi)",
+      "outdoor": false,
+      "duration": 70,
+      "source": "Data DEMO, bukan tempat yang dapat dipesan",
+      "price_status": "ilustrasi",
+      "opening_hours": ""
+    },
+    {
+      "id": "wisata-f",
+      "name": "Kawasan Alun-Alun (CONTOH)",
+      "kind": "wisata",
+      "price": 0,
+      "lat": -7.817,
+      "lon": 110.363,
+      "theme": "Wisata",
+      "area": "Koordinat contoh area Yogyakarta (BUKAN lokasi tervalidasi)",
+      "outdoor": true,
+      "duration": 70,
+      "source": "Data DEMO, bukan tempat yang dapat dipesan",
+      "price_status": "ilustrasi",
+      "opening_hours": ""
+    },
+    {
+      "id": "wisata-g",
+      "name": "Wisata Sejarah (CONTOH)",
+      "kind": "wisata",
+      "price": 20000,
+      "lat": -7.802,
+      "lon": 110.363,
+      "theme": "Sejarah",
+      "area": "Koordinat contoh area Yogyakarta (BUKAN lokasi tervalidasi)",
+      "outdoor": false,
+      "duration": 85,
+      "source": "Data DEMO, bukan tempat yang dapat dipesan",
+      "price_status": "ilustrasi",
+      "opening_hours": ""
+    },
+    {
+      "id": "wisata-h",
+      "name": "Taman Bukit (CONTOH)",
+      "kind": "wisata",
+      "price": 15000,
+      "lat": -7.809,
+      "lon": 110.395,
+      "theme": "Alam",
+      "area": "Koordinat contoh area Yogyakarta (BUKAN lokasi tervalidasi)",
+      "outdoor": true,
+      "duration": 70,
+      "source": "Data DEMO, bukan tempat yang dapat dipesan",
+      "price_status": "ilustrasi",
+      "opening_hours": ""
+    },
+    {
+      "id": "wisata-i",
+      "name": "Pasar Seni (CONTOH)",
+      "kind": "wisata",
+      "price": 0,
+      "lat": -7.793,
+      "lon": 110.361,
+      "theme": "Seni",
+      "area": "Koordinat contoh area Yogyakarta (BUKAN lokasi tervalidasi)",
+      "outdoor": false,
+      "duration": 60,
+      "source": "Data DEMO, bukan tempat yang dapat dipesan",
+      "price_status": "ilustrasi",
+      "opening_hours": ""
+    },
+    {
+      "id": "kuliner-a",
+      "name": "Restoran Siang (CONTOH)",
+      "kind": "kuliner",
+      "price": 40000,
+      "lat": -7.806,
+      "lon": 110.38,
+      "theme": "Kuliner",
+      "area": "Koordinat contoh area Yogyakarta (BUKAN lokasi tervalidasi)",
+      "outdoor": false,
+      "duration": 55,
+      "source": "Data DEMO, bukan tempat yang dapat dipesan",
+      "price_status": "ilustrasi",
+      "opening_hours": ""
+    },
+    {
+      "id": "kuliner-b",
+      "name": "Angkringan Malam (CONTOH)",
+      "kind": "kuliner",
+      "price": 25000,
+      "lat": -7.802,
+      "lon": 110.367,
+      "theme": "Kuliner",
+      "area": "Koordinat contoh area Yogyakarta (BUKAN lokasi tervalidasi)",
+      "outdoor": false,
+      "duration": 55,
+      "source": "Data DEMO, bukan tempat yang dapat dipesan",
+      "price_status": "ilustrasi",
+      "opening_hours": ""
+    },
+    {
+      "id": "kuliner-c",
+      "name": "Kafe Senja (CONTOH)",
+      "kind": "kuliner",
+      "price": 35000,
+      "lat": -7.812,
+      "lon": 110.365,
+      "theme": "Kuliner",
+      "area": "Koordinat contoh area Yogyakarta (BUKAN lokasi tervalidasi)",
+      "outdoor": false,
+      "duration": 55,
+      "source": "Data DEMO, bukan tempat yang dapat dipesan",
+      "price_status": "ilustrasi",
+      "opening_hours": ""
+    },
+    {
+      "id": "kuliner-d",
+      "name": "Warung Gudeg (CONTOH)",
+      "kind": "kuliner",
+      "price": 25000,
+      "lat": -7.8,
+      "lon": 110.372,
+      "theme": "Kuliner",
+      "area": "Koordinat contoh area Yogyakarta (BUKAN lokasi tervalidasi)",
+      "outdoor": false,
+      "duration": 55,
+      "source": "Data DEMO, bukan tempat yang dapat dipesan",
+      "price_status": "ilustrasi",
+      "opening_hours": ""
+    },
+    {
+      "id": "kuliner-e",
+      "name": "Kuliner Tradisional (CONTOH)",
+      "kind": "kuliner",
+      "price": 35000,
+      "lat": -7.82,
+      "lon": 110.373,
+      "theme": "Kuliner",
+      "area": "Koordinat contoh area Yogyakarta (BUKAN lokasi tervalidasi)",
+      "outdoor": false,
+      "duration": 55,
+      "source": "Data DEMO, bukan tempat yang dapat dipesan",
+      "price_status": "ilustrasi",
+      "opening_hours": ""
+    },
+    {
+      "id": "kuliner-f",
+      "name": "Pasar Makan Malam (CONTOH)",
+      "kind": "kuliner",
+      "price": 30000,
+      "lat": -7.81,
+      "lon": 110.38,
+      "theme": "Kuliner",
+      "area": "Koordinat contoh area Yogyakarta (BUKAN lokasi tervalidasi)",
+      "outdoor": false,
+      "duration": 55,
+      "source": "Data DEMO, bukan tempat yang dapat dipesan",
+      "price_status": "ilustrasi",
+      "opening_hours": ""
+    },
+    {
+      "id": "kuliner-g",
+      "name": "Rumah Makan Keluarga (CONTOH)",
+      "kind": "kuliner",
+      "price": 42000,
+      "lat": -7.82,
+      "lon": 110.385,
+      "theme": "Kuliner",
+      "area": "Koordinat contoh area Yogyakarta (BUKAN lokasi tervalidasi)",
+      "outdoor": false,
+      "duration": 55,
+      "source": "Data DEMO, bukan tempat yang dapat dipesan",
+      "price_status": "ilustrasi",
+      "opening_hours": ""
+    }
+  ],
+  "note": "DATA 100% CONTOH. Semua nama/koordinat dan tarif adalah ilustrasi, JANGAN gunakan untuk navigasi/booking nyata."
+}

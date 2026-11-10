@@ -1,0 +1,15 @@
+# Render Blueprint: satu web service Python, tanpa layanan berbayar.
+services:
+  - type: web
+    name: jalanyuk-python
+    runtime: python
+    plan: free
+    region: singapore
+    buildCommand: python -m compileall -q app.py planner.py providers.py route_service.py storage.py catalog.py
+    startCommand: python app.py
+    healthCheckPath: /api/health
+    envVars:
+      - key: HOST
+        value: 0.0.0.0
+      - key: PYTHONUNBUFFERED
+        value: '1'
